@@ -10,7 +10,8 @@ function App() {
   const dispatch = useDispatch();
 
   const users = useSelector((state) => state.user);
-
+  console.log("users:", users);
+console.log("is array:", Array.isArray(users));
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [editId, setEditId] = useState(null);
